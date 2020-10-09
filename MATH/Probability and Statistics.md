@@ -172,7 +172,7 @@ joint PMF must satisfy
 
 typically represented by means of a table or matrix
 
-![example](./assets./example.png)
+![example](./assets/example.png)
 
 
 
