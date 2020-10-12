@@ -18,11 +18,13 @@ V(4x+3) = 4<sup>2</sup> V(x)
 
 For V(z) where z = a function, we are only interested in the multiplier of x; that is, 4x or 2x or 3x, this will be n<sup>2</sup> V(x).
 
+<br/>
+
 1) Random Variable (countable) : PMF ( probability mass function) measurable function that associates a  number with each possible outcome in a given sample space
 
-discrete RV: pmf probability mass fn p(x) = p(X=x)
+​	discrete RV: PMF probability mass fn p(x) = p(X=x)
 
-sum x p(X) = 1
+​	sum x p(X) = 1
 
 <br/>
 
@@ -34,14 +36,14 @@ p(a<= x <= b) = ∫b>a f(x) dx
 
 ### Mean and Variance Table
 
-| Random Variable | Mean    | Variance               |
-| --------------- | ------- | ---------------------- |
-| Bernoulli       | p       | p(1-p)                 |
-| Geometric       | 1/p     | (1-p)/p<sup>2</sup>    |
-| Binomial        | np      | np(1-p)                |
-| Poisson         | λ       | λ                      |
-| Uniform         | (b+a)/2 | 1/12 (b+a)<sup>2</sup> |
-| Exponential     | 1/λ     | 1/λ<sup>2</sup>        |
+| Random Variable | Mean (μ) | Variance (σ<sup>2</sup>) |
+| --------------- | -------- | ------------------------ |
+| Bernoulli       | p        | p(1-p)                   |
+| Geometric       | 1/p      | (1-p)/p<sup>2</sup>      |
+| Binomial        | np       | np(1-p)                  |
+| Poisson         | λ        | λ                        |
+| Uniform         | (b+a)/2  | 1/12 (b+a)<sup>2</sup>   |
+| Exponential     | 1/λ      | 1/λ<sup>2</sup>          |
 
 <br/>
 
