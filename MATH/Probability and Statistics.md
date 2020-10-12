@@ -2,7 +2,7 @@
 
 model of everything : 
 
-var(x) = E(x^2^) - E(x)^2^
+var(x) = E(x<sup>2</sup>) - E(x)<sup>2</sup>
 
 
 
@@ -10,15 +10,15 @@ var(x) = E(x^2^) - E(x)^2^
 
 Given value of E(x) and V(x) :
 
-`E(2x+3) = 2E(x) + 3`
+E(2x+3) = 2E(x) + 3
 
-V(4x+3) = 4^2^ V(x)
+V(4x+3) = 4<sup>2</sup> V(x)
 
 
 
-For V(z) where z = a function, we are only interested in the multiplier of x; that is, 4x or 2x or 3x, this will be `n^2 V(x)`.
+For V(z) where z = a function, we are only interested in the multiplier of x; that is, 4x or 2x or 3x, this will be n<sup>2</sup> V(x).
 
-1) Random Variable (countable) : PMF ( probability mass function) measurable funciton that associates a  number with each possible outcome in a given sample space
+1) Random Variable (countable) : PMF ( probability mass function) measurable function that associates a  number with each possible outcome in a given sample space
 
 discrete RV: pmf probability mass fn p(x) = p(X=x)
 
@@ -30,11 +30,22 @@ sum x p(X) = 1
 
 p(a<= x <= b) = ∫b>a f(x) dx
 
+  
 
+​    
 
+### Mean and Variance Table
 
+| Random Variable | Mean    | Variance               |
+| --------------- | ------- | ---------------------- |
+| Bernoulli       | p       | p(1-p)                 |
+| Geometric       | 1/p     | (1-p)/p<sup>2</sup>    |
+| Binomial        | np      | np(1-p)                |
+| Poisson         | λ       | λ                      |
+| Uniform         | (b+a)/2 | 1/12 (b+a)<sup>2</sup> |
+| Exponential     | 1/λ     | 1/λ<sup>2</sup>        |
 
-
+  
 
 
 
@@ -48,7 +59,7 @@ The Binomial Distribution Model
 
 
 
-shortcut formula : nCx . p^x . (1-p)^(n-x)
+shortcut formula : nCx . p<sup>x</sup> . (1-p)<sup>n-x</sup>
 
 Use of the binomial distribution requires three assumptions:
 
@@ -58,9 +69,9 @@ Use of the binomial distribution requires three assumptions:
 
 
 
-mean `E(X) = np`
+`Mean` E(X) = np
 
-variance `var(x) = np(1-P)`
+`variance` var(x) = np(1-P)
 
 
 
@@ -85,7 +96,7 @@ poisson with λ = np closely approximates the binomial distribution if n is larg
 
 
 
-
+  
 
 
 
@@ -101,7 +112,7 @@ if **X~N (µ, σ^2^)**
 
 then **Z = x-µ / σ**
 
-
+  
 
 ##### Standard normal table
 
@@ -115,13 +126,13 @@ To use this table : (the typical qn)
 
 2) solve for Z
 
-lets say Z = 1.75. read 1.7 off the lhs of the table, then find the 0.05 column. 
+lets say Z = 1.75. read 1.7 off the LHS of the table, then find the 0.05 column. 
 
 3) This is your Z value away from 0.5 (as the middle of the standard normal bell curve graph) means this value is between 0.5 and 1.75.
 
 manipulate as needed to get desired value
 
-
+  
 
 
 
@@ -176,7 +187,7 @@ typically represented by means of a table or matrix
 
 
 
-
+  
 
 ### Marginal PMF
 
@@ -188,7 +199,7 @@ if `px(X)`"marginal pdf of x wrt a X row", they want to see this row (in red) an
 
 if `py(y)`"marginal pdf of y wrt a Y column", you draw a table summing up the 4 columns (highlighted in blue)
 
-
+  
 
 ### Joint PDF
 
@@ -205,6 +216,8 @@ if f(x,y) describes a surface, P[(X, Y ) ∈ A] describes the volume beneath the
 
 
 P[(X, Y ) ∈ A] = ∫b>a ∫d>c f(x, y) dydx
+
+  
 
 ### Marginal PDF
 
