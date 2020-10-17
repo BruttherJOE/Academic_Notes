@@ -55,7 +55,9 @@ The Binomial Distribution Model
 
 
 
-![eqnimg](./assets/eqnimg.gif)
+<p align="center">
+  <img width="auto" height="auto" src="./assets/eqnimg.gif">
+</p>
 
 
 
@@ -77,7 +79,9 @@ Use of the binomial distribution requires three assumptions:
 
 ### Poisson Distribution
 
-![poisson dist](./assets/poisson_dist.png)
+<p align="center">
+  <img width="auto" height="auto" src="./assets/poisson_dist.png">
+</p>
 
 Often used to model the number of occurence of events in a time interval. Eg, number of buses passed by a location from 3pm to 4pm
 
@@ -100,8 +104,6 @@ poisson with λ = np closely approximates the binomial distribution if n is larg
 
 
 
-
-
 ### Normal Distribution
 
 Standardising (number of standard deviations from the mean)
@@ -116,13 +118,15 @@ then **Z = x-µ / σ**
 
 ##### Standard normal table
 
-![stdnTABLE](./assets/stdnTABLE.png)
+<p align="center">
+  <img width="auto" height="auto" src="./assets/stdnTABLE.png">
+</p>
 
 <br/>
 
 To use this table : (the typical qn)
 
-1) let **Z = x-µ / σ**
+1) let **Z = x-µ / σ** (x,µ,σ should already be known)
 
 2) solve for Z
 
@@ -175,9 +179,9 @@ The exponential is the only memoryless continuous random variable.
 2 Discrete RV, X and Y. The joint PMF p(x,y) = p(X=x and Y =y)
 
 joint PMF must satisfy
-1) p(x,y) >= 0
+1) p(x,y) >= 0 (an outcome must not have negative probability)
 
-2) sumx sumy p(x,y) = 1
+2) Σx Σy p(x,y) = 1 (all outcomes must add up to 1)
 
 typically represented by means of a table or matrix
 
