@@ -49,7 +49,31 @@ p(a<= x <= b) = ∫b>a f(x) dx
 
 <br/>
 
+### Bernoulli Random Variable
+
+Can only take on 2 variables : 1 and 0, it is a binomial variable but it is not successive eg 1 coin flip only.
+
+**Probability mass function**: 
+P(X = 1) = p
+P(X = 0) = (1 − p) 
+
+
+
+**Expectation**: E[X] = p 
+
+**Variance**: Var(X) = p(1 − p)
+
+<br/>
+
+<br/>
+
 ### Binomial Distribution
+
+<br/>
+
+This measures successive trials of Bernoulli random variable.
+
+<br/>
 
 The Binomial Distribution Model
 
@@ -73,7 +97,7 @@ Use of the binomial distribution requires three assumptions:
 
 `Mean` E(X) = np
 
-`variance` var(x) = np(1-P)
+`variance` var(x) = np(1-P) = npq , where q = 1-p
 
 <br/>
 
@@ -121,7 +145,6 @@ then **Z = x-µ / σ**
 <p align="center">
   <img width="auto" height="auto" src="./assets/stdnTABLE.png">
 </p>
-
 <br/>
 
 To use this table : (the typical qn)
@@ -132,7 +155,7 @@ To use this table : (the typical qn)
 
 lets say Z = 1.75. read 1.7 off the LHS of the table, then find the 0.05 column. 
 
-3) This is your Z value away from 0.5 (as the middle of the standard normal bell curve graph) means this value is between 0.5 and 1.75.
+3) This is your Z value away from 0.5% (as the middle of the standard normal bell curve graph) means this value is between 0.5% and 1.75.
 
 manipulate as needed to get desired value
 
@@ -249,11 +272,15 @@ it can be said that they are independent. (review last qn of the slides)
 
 <u>Rules</u>
 
-Bi ~ Po >>>> ` np ≈ λ`
+where q = 1-p,
 
-Po ~ Exp >>>> `λEx ≈ λPo / t`
+Bi ~ Po >>>>  np ≈ λ
 
-where `t` is the time period in which `λEx` occurs in
+Bi ~ N( (np)<sub>Bi</sub> , (npq)<sub>Bi</sub> ) >>>> np = µ, npq = σ<sup>2</sup>
+
+Po ~ Exp >>>> λEx ≈ λPo / t
+
+​	where `t` is the time period in which `λEx` occurs in
 
 <br/>
 
@@ -294,4 +321,4 @@ annex 1 : integral of marginal pdf if x,y takes values in a circle. Supplementar
 
 3) SUTD Notes
 
-4) Phoebe Notes
+4) Phoebe Notes	
